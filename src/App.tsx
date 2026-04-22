@@ -1,4 +1,5 @@
 import { Logo } from './components/Logo';
+import { Menu } from './components/Menu';
 import { Container } from './components/ui/Container';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
         <Logo />
       </Container>
       <Container>
-        <span>MENU</span>
+        <Menu />
       </Container>
     </>
   );
