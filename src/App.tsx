@@ -1,4 +1,5 @@
 import { CountDown } from './components/CountDown';
+import { CreateTaskForm } from './components/CreateTaskForm';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { Container } from './components/ui/Container';
@@ -14,6 +15,9 @@ function App() {
       </Container>
       <Container>
         <CountDown />
+      </Container>
+      <Container>
+        <CreateTaskForm />
       </Container>
     </>
   );
