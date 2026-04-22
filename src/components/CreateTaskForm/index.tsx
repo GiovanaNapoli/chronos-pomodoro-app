@@ -1,6 +1,9 @@
 import { useForm } from 'react-hook-form';
 import styles from './styles.module.css';
 import { Input } from '../ui/Input';
+import { Cycles } from '../Cycles';
+import { Button } from '../ui/Button';
+import { PlayCircleIcon } from 'lucide-react';
 
 type CreateTaskFormData = {
   task: string;
@@ -23,6 +26,7 @@ export function CreateTaskForm() {
           label='Task'
           id='task'
           type='text'
+          placeholder='Digite algo'
           registration={register('task', { required: true })}
         />
         {errors.task && <span>This field is required</span>}
@@ -34,11 +38,10 @@ export function CreateTaskForm() {
         </p>
       </div>
       <div className={styles.row}>
-        <p>Ciclos</p>
-        <p>0 0 0 0 0 0</p>
+        <Cycles />
       </div>
       <div className={styles.row}>
-        <button type='submit'>Criar Task</button>
+        <Button color='green' icon={<PlayCircleIcon />} />
       </div>
     </form>
   );
