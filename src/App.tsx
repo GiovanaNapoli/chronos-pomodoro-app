@@ -1,8 +1,17 @@
-function App() {
+import { Logo } from './components/Logo';
+import { Container } from './components/ui/Container';
 
+function App() {
   return (
-    <h1>hello world</h1>
-  )
+    <>
+      <Container>
+        <Logo />
+      </Container>
+      <Container>
+        <span>MENU</span>
+      </Container>
+    </>
+  );
 }
 
-export default App
+export default App;
